@@ -50,3 +50,24 @@ jobs:
 
       - name: Run tests with pytest
         run: python code/train.py
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      
+      - name: Install Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: Install dependencies
+        run: |
+           python -m pip install --upgrade pip
+           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+           pip install pytest
+
+      - name: Run tests with pytest
+        run: python code/train.py
