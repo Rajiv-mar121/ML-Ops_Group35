@@ -70,7 +70,4 @@ jobs:
            pip install pytest
 
       - name: Deploy model
-        env: 
-          MODEL_PATH: *.joblib
-        #  DEPLOYMENT_SERVER: user@your-deployment-server.com
         run: python code/train.py
