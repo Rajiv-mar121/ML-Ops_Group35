@@ -1,2 +1,2 @@
-pip install mlflow
-pip install scikit-learn
+pip install mlflow;
+pip install scikit-learn;
