@@ -70,7 +70,7 @@ jobs:
            pip install pytest
 
       - name: Path
-        run: | pwd
+        run: echo ${{ github.workspace }}
 
       - name: Login to DockerHub
         uses: docker/login-action@v2
