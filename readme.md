@@ -1,71 +1,57 @@
-# Project Title
+# MLops_Assignment1_Group35
 
-Group Number - 35
-Rajiv Kumar (2022ac05147)
-Neeraj Kumar (2022ac05468)
-Saurabh Kumar (2022ac05293)
-Krishna Kumar v (2022ac05373)
+####Group Number - 35
+
+* Rajiv Kumar (2022ac05147)
+* Neeraj Kumar (2022ac05468)
+* Saurabh Kumar (2022ac05293)
+* Krishna Kumar v (2022ac05373)
+* Manglam Kumar (2022ac05260)
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+This project aims to build a comprehensive MLOps pipeline that integrates various tools and technologies to streamline the machine learning lifecycle. The pipeline includes the following key components:
 
-## Getting Started
+1. **Optuna**: An optimization framework to automate hyperparameter tuning.
+2. **MLflow**: A platform to manage the ML lifecycle, including experimentation, reproducibility, and deployment.
+3. **DVC (Data Version Control)**: A version control system for data and machine learning models.
+4. **Flask**: A micro web framework to expose the prediction API.
+5. **Docker**: Containerization to ensure consistency across different environments.
+6. **Google Kubernetes Engine (GKE)**: A managed Kubernetes service for deploying and managing containerized applications.
+7. **Kubernetes**: An orchestration tool to manage containerized applications.
+8. **Helm**: A package manager for Kubernetes to manage deployments.
+
+The project workflow involves creating a simple machine learning model, optimizing it using Optuna, tracking experiments with MLflow, versioning data and models with DVC, and finally deploying the model as a Flask API. The entire application is containerized using Docker and deployed to GKE using Kubernetes and Helm charts for efficient management and scaling.
+
+This project serves as a practical example of implementing MLOps practices to ensure reproducibility, scalability, and efficient management of machine learning projects.
 
 ### Dependencies
+* Docker
+* minikube
+* kubectl
+* gcloud CLI
+* scikit-learn==1.3.2
+* optuna==3.6.1
+* Flask==3.0.3
+* pandas==2.2.1Docker
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
 
 ### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+Refer steps mentioned in [Here](https://github.com/Rajiv-mar121/ML-Ops_Group35/blob/main/M4/M4-Deliverables-report.pdf)
 
 ## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-Rajiv Kumar (2022ac05147)
-Neeraj Kumar (2022ac05468)
-Saurabh Kumar (2022ac05293)
-Krishna Kumar v (2022ac05373)
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Reachout to authors via email.
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
+See [commit change](https://github.com/Rajiv-mar121/ML-Ops_Group35/commits/main/)
 
-## License
+## Authors
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+#### Contributors names and contact info
 
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+* Rajiv Kumar (2022ac05147)
+* Neeraj Kumar (2022ac05468)
+* Saurabh Kumar (2022ac05293)
+* Krishna Kumar v (2022ac05373)
+* Manglam Kumar (2022ac05260)
