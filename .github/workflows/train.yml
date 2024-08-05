@@ -85,7 +85,14 @@ jobs:
           file: ./Docker/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/my-python-app:latest
-        
+      
+      - name: Docker Run
+        run: docker run -d --name my-python-app -p 80:80 ${{ secrets.DOCKER_USERNAME }}/my-python-app:latest
+
+      - name: Stop and remove Docker container
+        run: |
+          docker stop my-python-app
+          docker rm my-python-app
 
 
 
@@ -111,12 +118,3 @@ jobs:
       - name: Deploy model
         run: python code/train.py
 
-      - name: SSH and Deploy
-        uses: appleboy/ssh-action@v0.5.8
-        with:
-          username: ${{ secrets.DEPLOY_USER }}
-          script: |
-            docker pull ${{ secrets.DOCKER_USERNAME }}/my-python-app:latest
-            docker stop my-python-app || true
-            docker rm my-python-app || true
-            docker run -d --name my-python-app -p 80:80 ${{ secrets.DOCKER_USERNAME }}/my-python-app:latest
