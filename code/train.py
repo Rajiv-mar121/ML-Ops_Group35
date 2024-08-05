@@ -22,7 +22,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 # mlflow.create_experiment("my_experiment")
 
-# Create an MLflow experiment
+# Set an MLflow experiment
 mlflow.set_experiment("my_experiment")
 
 # Define hyperparameters
