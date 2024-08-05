@@ -51,7 +51,7 @@ jobs:
       - name: Run tests with pytest
         run: python code/train.py
 
-  docker-build:
+  docker-build-run:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
