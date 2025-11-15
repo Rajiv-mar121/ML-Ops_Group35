@@ -46,8 +46,6 @@ Reachout to authors via email.
 
 See [commit change](https://github.com/Rajiv-mar121/ML-Ops_Group35/commits/main/)
 
-## Authors
-
 #### Contributors names and contact info
 
 * Rajiv Kumar (2022ac05147)
